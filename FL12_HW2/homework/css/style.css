@@ -25,6 +25,7 @@
         text-align: center;
         font-weight: 300;
     }
+
     .tm-banner-text {
         font-weight: bolder;
     }
@@ -98,9 +99,32 @@
         display: block;
         z-index: 1;
     }
-    section.blocks p:last-of-type{
+
+    section.blocks p:last-of-type {
         font-style: italic;
         letter-spacing: 0.2em;
         word-spacing: 1em;
     }
 }
+
+nav li:hover {
+    background-color: lightskyblue;
+
+}
+
+nav a:hover {
+    color: #fff !important;
+}
+
+.tm-banner {
+        background: linear-gradient(to right, lightskyblue, burlywood);
+}
+.tm-banner-inner{
+    background-color: white;
+}
+.tm-banner-text{
+    text-shadow: 4px 4px 3px #333;
+}
+
+
+
