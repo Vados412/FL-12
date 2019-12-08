@@ -25,7 +25,6 @@
         text-align: center;
         font-weight: 300;
     }
-
     .tm-banner-text {
         font-weight: bolder;
     }
@@ -94,8 +93,14 @@
         display: none;
     }
 
-    div.carousel-item.active {
+    div.carousel-item.active,
+    section.heading {
         display: block;
         z-index: 1;
+    }
+    section.blocks p:last-of-type{
+        font-style: italic;
+        letter-spacing: 0.2em;
+        word-spacing: 1em;
     }
 }
