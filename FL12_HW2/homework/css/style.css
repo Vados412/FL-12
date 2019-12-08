@@ -125,6 +125,22 @@ nav a:hover {
 .tm-banner-text{
     text-shadow: 4px 4px 3px #333;
 }
+p.tm-banner-text {
+    animation-duration: 2s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 200px;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
-
+  
 
