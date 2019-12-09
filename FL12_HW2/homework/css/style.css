@@ -188,8 +188,8 @@
         content: ">";
     }
 
-    section div ol li:nth-child(1)::after,
-    section div ol li:nth-child(3)::after {
+    section.heading.tm-content-box div ol li:nth-child(1)::after,
+    section.heading.tm-content-box div ol li:nth-child(3)::after {
         content: "New";
         color: red;
         vertical-align: super;
@@ -216,21 +216,39 @@
         background-color: #87cefa;
         color: white;
     }
-    section.blocks div.tm-content-box ul.boxes.gallery-container li p{
+
+    section.blocks div.tm-content-box ul.boxes.gallery-container li p {
         font-style: italic;
     }
+
     section.blocks div.tm-content-box ul.boxes.gallery-container li p::first-letter {
         font-weight: bold;
     }
 
-    section.blocks div.tm-content-box ul.boxes.gallery-container li img{
+    section.blocks div.tm-content-box ul.boxes.gallery-container li img {
         padding: 20px 20px 0 20px;
     }
-    section.blocks div.tm-content-box ul.boxes.gallery-container li div{
-        padding: 0 0 20px 17px; 
+
+    section.blocks div.tm-content-box ul.boxes.gallery-container li div {
+        padding: 0 0 20px 17px;
     }
 
+    p.tm-section-description {
+        line-height: 35px;
+        text-indent: 25px;
+    }
 
+    #contact_name:focus,
+    #contact_email:focus,
+    #contact_subject:focus {
+        background-color: lightskyblue;
+    }
+
+    button {
+        float: right;
+        background-color: white !important;
+        color: lightskyblue !important;
+    }
 
 
 
