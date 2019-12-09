@@ -102,45 +102,138 @@
 
     section.blocks p:last-of-type {
         font-style: italic;
-        letter-spacing: 0.2em;
-        word-spacing: 1em;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        padding: 0;
     }
 }
 
-nav li:hover {
-    background-color: lightskyblue;
+@media screen {
+    nav li:hover {
+        background-color: lightskyblue;
 
-}
+    }
 
-nav a:hover {
-    color: #fff !important;
-}
+    nav a:hover {
+        color: #fff !important;
+    }
 
-.tm-banner {
+    .tm-banner {
         background: linear-gradient(to right, lightskyblue, burlywood);
-}
-.tm-banner-inner{
-    background-color: white;
-}
-.tm-banner-text{
-    text-shadow: 4px 4px 3px #333;
-}
-p.tm-banner-text {
-    animation-duration: 2s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 200px;
-      width: 300%; 
     }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
+
+    .tm-banner-inner {
+        background-color: white;
     }
-  }
 
-  
+    .tm-banner-text {
+        text-shadow: 4px 4px 3px #333;
+    }
 
+    p.tm-banner-text {
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            margin-left: 200px;
+            width: 300%;
+        }
+
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
+    section div.tm-content-box.flex-2-col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tm-team-img {
+        float: right;
+    }
+
+    .tm-team-description-container {
+        float: left;
+    }
+
+    .tm-team-description-container h2 {
+        text-align: center;
+    }
+
+    .tm-team-description-container p {
+        text-indent: 1.5em;
+        line-height: 1.8em;
+    }
+
+    #about li:nth-child(odd):hover {
+        background: lightgray;
+        color: lightskyblue;
+    }
+
+    section.heading.tm-content-box div.padding-medium ol {
+        list-style: lower-alpha;
+    }
+
+    section.heading.tm-content-box div.padding-medium h2 {
+        color: #90d1fa;
+        text-align: center;
+    }
+
+    section.heading.tm-content-box div.padding-medium li:hover:before {
+        content: ">";
+    }
+
+    section div ol li:nth-child(1)::after,
+    section div ol li:nth-child(3)::after {
+        content: "New";
+        color: red;
+        vertical-align: super;
+        font-variant: small-caps;
+        font-weight: bolder;
+    }
+
+    section.blocks div.padding-medium.flex-item.tm-team-description-container h2~p {
+        text-align: left;
+    }
+
+    section.blocks div.padding-medium.flex-item.tm-team-description-container p:last-child {
+        font-style: italic;
+        letter-spacing: 5px;
+        word-spacing: 10px;
+    }
+
+    section.blocks div.tm-content-box.flex-2-col {
+        clear: both;
+        display: block;
+    }
+
+    section.blocks div.tm-content-box ul.boxes.gallery-container {
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
