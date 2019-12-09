@@ -212,10 +212,23 @@
         display: block;
     }
 
-    section.blocks div.tm-content-box ul.boxes.gallery-container {
-        clear: both;
+    section.blocks div.tm-content-box ul.boxes.gallery-container li:nth-child(odd) {
+        background-color: #87cefa;
+        color: white;
+    }
+    section.blocks div.tm-content-box ul.boxes.gallery-container li p{
+        font-style: italic;
+    }
+    section.blocks div.tm-content-box ul.boxes.gallery-container li p::first-letter {
+        font-weight: bold;
     }
 
+    section.blocks div.tm-content-box ul.boxes.gallery-container li img{
+        padding: 20px 20px 0 20px;
+    }
+    section.blocks div.tm-content-box ul.boxes.gallery-container li div{
+        padding: 0 0 20px 17px; 
+    }
 
 
 
