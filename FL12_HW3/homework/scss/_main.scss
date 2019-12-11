@@ -1,57 +1,85 @@
-header {
-  background: $headbgimg no-repeat center;
-  background-size: cover;
-  position: relative;
-  height: 720px;
-  font-family: "Hind", sans-serif;
-  color: $fntclr;
-  .header-wrap {
-    display: block;
-    padding-left: 10%;
-    max-width: 650px;
-    .landing-logo {
-      padding-top: 21px;
-      p {
-        margin-top: 0;
-        text-align: center;
-      }
-      img + p {
-        display: inline-block;
-        vertical-align: top;
-        span {
-          font-weight: 300;
-          font-size: 7px;
-          text-align: center;
-          padding-bottom: 4px;
-          white-space: pre;
-          vertical-align: top;
-          &:before {
-            content: "\A";
-          }
+body {
+    header {
+        background: $headbgimg no-repeat center;
+        background-size: cover;
+        height: 520px;
+        font-family: "Hind", sans-serif;
+        color: $fntclr;
+        border: 1px solid $btnfntclr;
+        border-radius: 0 0 500px/200px 0;
+        .header-wrap {
+            display: block;
+            padding-left: 135px;
+            max-width: 650px;
+            .landing-logo {
+                padding-top: 0px;
+                img {
+                    padding-top: 7px;
+                    height: 32px;
+                }
+                p {
+                    margin-top: 2px;
+                    padding-left: 5px;
+                    font-size: 18px;
+                    text-align: center;
+                }
+                img+p {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-weight: bolder;
+                    span {
+                        font-weight: 200;
+                        font-size: 7px;
+                        text-align: center;
+                        padding-bottom: 4px;
+                        white-space: pre;
+                        vertical-align: top;
+                        &:before {
+                            content: "\A";
+                        }
+                    }
+                }
+            }
+            .header_heading {
+                font-family: "Source Sans Pro", sans-serif;
+                font-size: 50px;
+                font-weight: bold;
+                width: 375px;
+                text-align: left;
+                position: relative;
+                margin-top: 10px;
+                margin-bottom: 30px;
+                &::before {
+                    content: "awesome";
+                    background-color: $wordbg;
+                    background-size: 1px;
+                    position: absolute;
+                    top: 62px;
+                    left: 0;
+                }
+            }
+            .header_text {
+                padding-left: 0px;
+                width: 470px;
+                font-size: 12px;
+            }
+            div {
+                padding-top: 40px;
+                .header_button {
+                    border-style: solid;
+                    border-color: $btnclr;
+                    border-radius: 3px;
+                    background-color: $btnclr;
+                    color: $btnfntclr;
+                    width: 105px;
+                    height: 35px;
+                }
+                .login {
+                    padding-left: 110px;
+                    font-size: 15px;
+                    color: $btnfntclr;
+                }
+            }
         }
-      }
     }
-    .header_heading {
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 50px;
-      font-weight: bold;
-      width: 500px;
-      padding-left: 5px;
-      position: relative;
-      &::before {
-        content: "awesome";
-        background-color: $wordbg;
-        position: absolute;
-        top: 63px;
-        left: 5px;
-      }
-
-      p:nth-child(5) {
-        background-color: $wordbg;
-      }
-    }
-    .header_text {
-      padding-left: 5px;
-    }
-  }
 }

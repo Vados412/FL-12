@@ -1,45 +1,69 @@
-header {
+body header {
   background: url(/img/m-h-day.jpg) no-repeat center;
   background-size: cover;
-  position: relative;
-  height: 720px;
+  height: 520px;
   font-family: "Hind", sans-serif;
-  color: #2c2f3c; }
-  header .header-wrap {
+  color: #2c2f3c;
+  border: 1px solid white;
+  border-radius: 0 0 500px/200px 0; }
+  body header .header-wrap {
     display: block;
-    padding-left: 10%;
+    padding-left: 135px;
     max-width: 650px; }
-    header .header-wrap .landing-logo {
-      padding-top: 21px; }
-      header .header-wrap .landing-logo p {
-        margin-top: 0;
+    body header .header-wrap .landing-logo {
+      padding-top: 0px; }
+      body header .header-wrap .landing-logo img {
+        padding-top: 7px;
+        height: 32px; }
+      body header .header-wrap .landing-logo p {
+        margin-top: 2px;
+        padding-left: 5px;
+        font-size: 18px;
         text-align: center; }
-      header .header-wrap .landing-logo img + p {
+      body header .header-wrap .landing-logo img + p {
         display: inline-block;
-        vertical-align: top; }
-        header .header-wrap .landing-logo img + p span {
-          font-weight: 300;
+        vertical-align: top;
+        font-weight: bolder; }
+        body header .header-wrap .landing-logo img + p span {
+          font-weight: 200;
           font-size: 7px;
           text-align: center;
           padding-bottom: 4px;
           white-space: pre;
           vertical-align: top; }
-          header .header-wrap .landing-logo img + p span:before {
+          body header .header-wrap .landing-logo img + p span:before {
             content: "\A"; }
-    header .header-wrap .header_heading {
+    body header .header-wrap .header_heading {
       font-family: "Source Sans Pro", sans-serif;
       font-size: 50px;
       font-weight: bold;
-      width: 500px;
-      padding-left: 5px;
-      position: relative; }
-      header .header-wrap .header_heading::before {
+      width: 375px;
+      text-align: left;
+      position: relative;
+      margin-top: 10px;
+      margin-bottom: 30px; }
+      body header .header-wrap .header_heading::before {
         content: "awesome";
         background-color: #14a0c7;
+        background-size: 1px;
         position: absolute;
-        top: 63px;
-        left: 5px; }
-      header .header-wrap .header_heading p:nth-child(5) {
-        background-color: #14a0c7; }
-    header .header-wrap .header_text {
-      padding-left: 5px; }
+        top: 62px;
+        left: 0; }
+    body header .header-wrap .header_text {
+      padding-left: 0px;
+      width: 470px;
+      font-size: 12px; }
+    body header .header-wrap div {
+      padding-top: 40px; }
+      body header .header-wrap div .header_button {
+        border-style: solid;
+        border-color: #699900;
+        border-radius: 3px;
+        background-color: #699900;
+        color: white;
+        width: 105px;
+        height: 35px; }
+      body header .header-wrap div .login {
+        padding-left: 110px;
+        font-size: 15px;
+        color: white; }
