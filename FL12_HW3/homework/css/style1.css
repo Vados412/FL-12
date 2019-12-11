@@ -1,0 +1,45 @@
+header {
+  background: url(/img/m-h-day.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 720px;
+  font-family: "Hind", sans-serif;
+  color: #2c2f3c; }
+  header .header-wrap {
+    display: block;
+    padding-left: 10%;
+    max-width: 650px; }
+    header .header-wrap .landing-logo {
+      padding-top: 21px; }
+      header .header-wrap .landing-logo p {
+        margin-top: 0;
+        text-align: center; }
+      header .header-wrap .landing-logo img + p {
+        display: inline-block;
+        vertical-align: top; }
+        header .header-wrap .landing-logo img + p span {
+          font-weight: 300;
+          font-size: 7px;
+          text-align: center;
+          padding-bottom: 4px;
+          white-space: pre;
+          vertical-align: top; }
+          header .header-wrap .landing-logo img + p span:before {
+            content: "\A"; }
+    header .header-wrap .header_heading {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      width: 500px;
+      padding-left: 5px;
+      position: relative; }
+      header .header-wrap .header_heading::before {
+        content: "awesome";
+        background-color: #14a0c7;
+        position: absolute;
+        top: 63px;
+        left: 5px; }
+      header .header-wrap .header_heading p:nth-child(5) {
+        background-color: #14a0c7; }
+    header .header-wrap .header_text {
+      padding-left: 5px; }

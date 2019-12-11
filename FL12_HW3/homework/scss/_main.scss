@@ -1,1 +1,57 @@
-// Write your styles here
+header {
+  background: $headbgimg no-repeat center;
+  background-size: cover;
+  position: relative;
+  height: 720px;
+  font-family: "Hind", sans-serif;
+  color: $fntclr;
+  .header-wrap {
+    display: block;
+    padding-left: 10%;
+    max-width: 650px;
+    .landing-logo {
+      padding-top: 21px;
+      p {
+        margin-top: 0;
+        text-align: center;
+      }
+      img + p {
+        display: inline-block;
+        vertical-align: top;
+        span {
+          font-weight: 300;
+          font-size: 7px;
+          text-align: center;
+          padding-bottom: 4px;
+          white-space: pre;
+          vertical-align: top;
+          &:before {
+            content: "\A";
+          }
+        }
+      }
+    }
+    .header_heading {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 50px;
+      font-weight: bold;
+      width: 500px;
+      padding-left: 5px;
+      position: relative;
+      &::before {
+        content: "awesome";
+        background-color: $wordbg;
+        position: absolute;
+        top: 63px;
+        left: 5px;
+      }
+
+      p:nth-child(5) {
+        background-color: $wordbg;
+      }
+    }
+    .header_text {
+      padding-left: 5px;
+    }
+  }
+}
