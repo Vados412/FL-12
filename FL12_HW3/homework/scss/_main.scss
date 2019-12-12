@@ -2,11 +2,11 @@ body {
     header {
         background: $headbgimg no-repeat center;
         background-size: cover;
-        height: 520px;
-        font-family: "Hind", sans-serif;
+        height: 532px;
+        font-family: $hind;
         color: $fntclr;
         border: 1px solid $btnfntclr;
-        border-radius: 0 0 500px/200px 0;
+        border-radius: 0 0 500px/230px 0;
         .header-wrap {
             display: block;
             padding-left: 135px;
@@ -26,9 +26,9 @@ body {
                 img+p {
                     display: inline-block;
                     vertical-align: top;
-                    font-weight: bolder;
+                    font-weight: map-get($font-sila, "jirniy");
                     span {
-                        font-weight: 200;
+                        font-weight: map-get($font-sila, "drish");
                         font-size: 7px;
                         text-align: center;
                         padding-bottom: 4px;
@@ -41,9 +41,9 @@ body {
                 }
             }
             .header_heading {
-                font-family: "Source Sans Pro", sans-serif;
+                font-family: $sans;
                 font-size: 50px;
-                font-weight: bold;
+                font-weight: map-get($font-sila, "kachok");
                 width: 375px;
                 text-align: left;
                 position: relative;
@@ -66,13 +66,7 @@ body {
             div {
                 padding-top: 40px;
                 .header_button {
-                    border-style: solid;
-                    border-color: $btnclr;
-                    border-radius: 3px;
-                    background-color: $btnclr;
-                    color: $btnfntclr;
-                    width: 105px;
-                    height: 35px;
+                    @include button;
                 }
                 .login {
                     padding-left: 110px;
@@ -80,6 +74,118 @@ body {
                     color: $btnfntclr;
                 }
             }
+        }
+    }
+}
+
+main {
+    text-align: center;
+    .section_text {
+        font-size: 30px;
+        font-family: $sans;
+        font-weight: map-get($font-sila, "jirniy");
+        position: relative;
+        margin-bottom: 25px;
+        &::before {
+            content: "adventure";
+            background-color: $wordbg;
+            background-size: 1px;
+            position: absolute;
+            top: 0;
+            left: 717px;
+        }
+    }
+    .section_card_wrap {
+        max-width: 1420px;
+        .section_card {
+            width: 820px;
+            height: 238px;
+            display: inline-block;
+            @include bordermain;
+            left: 0px;
+            position: relative;
+            margin-bottom: 14px;
+            img {
+                float: left;
+                margin: 10px;
+                @include bordermain;
+                width: 320px;
+            }
+            .section_card_right_container {
+                float: right;
+                width: 450px;
+                position: relative;
+                left: 10px;
+                top: 40px;
+                font-family: $hind;
+                .section_card_heading {
+                    text-align: center;
+                    color: $btnfntclr;
+                    position: relative;
+                    font-size: 17px;
+                    right: 40px;
+                    bottom: 10px;
+                    font-weight: map-get($font-sila, "jirniy");
+                }
+                .section_card_text {
+                    text-align: justify;
+                    color: $sectiontextclr;
+                    width: 350px;
+                    padding-left: 15px;
+                    line-height: 18px;
+                    font-weight: map-get($font-sila, "hudoi");
+                }
+                .section_link {
+                    color: $btnfntclr;
+                    position: relative;
+                    right: 33px;
+                }
+            }
+        }
+    }
+    .section_banner {
+        width: 62%;
+        height: 105px;
+        margin: 95px 0 0 270px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-image: linear-gradient(to right, #66950c, #2e5dd3);
+        z-index: 1;
+        .section_banner_text_wrap {
+            display: inline;
+            text-align: left;
+            position: relative;
+            left: 110px;
+            top: 13px;
+            font-family: $hind;
+            .section_banner_heading {
+                margin: 0;
+                font-size: 22px;
+                font-weight: map-get($font-sila, "kachok");
+                color: $fntclr;
+                text-indent: 5px;
+                &::before {
+                    content: "start";
+                    background-color: $wordbg;
+                    background-size: 1px;
+                    position: absolute;
+                    top: 0;
+                    right: 297px;
+                }
+            }
+            .section_banner_text {
+                margin: 0;
+                font-weight: map-get($font-sila, "drish");
+                color: $sectiontextclr;
+                margin: 5px;
+            }
+        }
+        .section_banner_button {
+            @include button;
+            float: right;
+            position: relative;
+            right: 117px;
+            bottom: 32px;
         }
     }
 }

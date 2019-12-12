@@ -1,11 +1,11 @@
 body header {
   background: url(/img/m-h-night.jpg) no-repeat center;
   background-size: cover;
-  height: 520px;
+  height: 532px;
   font-family: "Hind", sans-serif;
   color: #2c2f3c;
   border: 1px solid white;
-  border-radius: 0 0 500px/200px 0; }
+  border-radius: 0 0 500px/230px 0; }
   body header .header-wrap {
     display: block;
     padding-left: 135px;
@@ -44,7 +44,7 @@ body header {
       margin-bottom: 30px; }
       body header .header-wrap .header_heading::before {
         content: "awesome";
-        background-color: 14a0c7;
+        background-color: #14a0c7;
         background-size: 1px;
         position: absolute;
         top: 62px;
@@ -67,3 +67,109 @@ body header {
         padding-left: 110px;
         font-size: 15px;
         color: white; }
+
+main {
+  text-align: center; }
+  main .section_text {
+    font-size: 30px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bolder;
+    position: relative;
+    margin-bottom: 25px; }
+    main .section_text::before {
+      content: "adventure";
+      background-color: #14a0c7;
+      background-size: 1px;
+      position: absolute;
+      top: 0;
+      left: 717px; }
+  main .section_card_wrap {
+    max-width: 1420px; }
+    main .section_card_wrap .section_card {
+      width: 820px;
+      height: 238px;
+      display: inline-block;
+      background-color: #21232e;
+      border: 1px solid #21232e;
+      border-radius: 3px;
+      left: 0px;
+      position: relative;
+      margin-bottom: 14px; }
+      main .section_card_wrap .section_card img {
+        float: left;
+        margin: 10px;
+        background-color: #21232e;
+        border: 1px solid #21232e;
+        border-radius: 3px;
+        width: 320px; }
+      main .section_card_wrap .section_card .section_card_right_container {
+        float: right;
+        width: 450px;
+        position: relative;
+        left: 10px;
+        top: 40px;
+        font-family: "Hind", sans-serif; }
+        main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
+          text-align: center;
+          color: white;
+          position: relative;
+          font-size: 17px;
+          right: 40px;
+          bottom: 10px;
+          font-weight: bolder; }
+        main .section_card_wrap .section_card .section_card_right_container .section_card_text {
+          text-align: justify;
+          color: #c0b6a0;
+          width: 350px;
+          padding-left: 15px;
+          line-height: 18px;
+          font-weight: 100; }
+        main .section_card_wrap .section_card .section_card_right_container .section_link {
+          color: white;
+          position: relative;
+          right: 33px; }
+  main .section_banner {
+    width: 62%;
+    height: 105px;
+    margin: 95px 0 0 270px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #66950c, #2e5dd3);
+    z-index: 1; }
+    main .section_banner .section_banner_text_wrap {
+      display: inline;
+      text-align: left;
+      position: relative;
+      left: 110px;
+      top: 13px;
+      font-family: "Hind", sans-serif; }
+      main .section_banner .section_banner_text_wrap .section_banner_heading {
+        margin: 0;
+        font-size: 22px;
+        font-weight: bold;
+        color: #2c2f3c;
+        text-indent: 5px; }
+        main .section_banner .section_banner_text_wrap .section_banner_heading::before {
+          content: "start";
+          background-color: #14a0c7;
+          background-size: 1px;
+          position: absolute;
+          top: 0;
+          right: 297px; }
+      main .section_banner .section_banner_text_wrap .section_banner_text {
+        margin: 0;
+        font-weight: 200;
+        color: #c0b6a0;
+        margin: 5px; }
+    main .section_banner .section_banner_button {
+      border-style: solid;
+      border-color: #699900;
+      border-radius: 3px;
+      background-color: #699900;
+      color: white;
+      width: 105px;
+      height: 35px;
+      float: right;
+      position: relative;
+      right: 117px;
+      bottom: 32px; }

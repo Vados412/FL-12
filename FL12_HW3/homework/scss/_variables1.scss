@@ -3,3 +3,28 @@ $headbgimg: url(/img/m-h-day.jpg);
 $fntclr: #2c2f3c;
 $btnclr: #699900;
 $btnfntclr: white;
+$bckclrmain: #21232e;
+@mixin bordermain {
+    background-color: $bckclrmain;
+    border: 1px solid $bckclrmain;
+    border-radius: 3px;
+}
+
+@mixin button {
+    border-style: solid;
+    border-color: $btnclr;
+    border-radius: 3px;
+    background-color: $btnclr;
+    color: $btnfntclr;
+    width: 105px;
+    height: 35px;
+}
+
+$font-sila: ("hudoi": 100, "drish": 200, "normal": 400, "jirniy": bolder, "kachok":bold);
+$sectiontextclr:#c0c3ce;
+$sans:'Source Sans Pro',
+sans-serif;
+$hind: 'Hind',
+sans-serif;
+$fresca: 'Fresca',
+sans-serif;
