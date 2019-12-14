@@ -91,7 +91,7 @@ main {
       display: inline-block;
       background-color: #21232e;
       border: 1px solid #21232e;
-      border-radius: 3px;
+      border-radius: 5px;
       left: 0px;
       position: relative;
       margin-bottom: 14px; }
@@ -100,7 +100,7 @@ main {
         margin: 10px;
         background-color: #21232e;
         border: 1px solid #21232e;
-        border-radius: 3px;
+        border-radius: 5px;
         width: 320px; }
       main .section_card_wrap .section_card .section_card_right_container {
         float: right;
