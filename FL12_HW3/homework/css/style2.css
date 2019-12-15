@@ -1,7 +1,7 @@
 body {
   background-color: #21232e; }
   body header {
-    background: url(/img/m-h-night.jpg) no-repeat center;
+    background: url(../img/m-h-day.jpg) no-repeat center;
     background-size: cover;
     height: 532px;
     font-family: "Fresca", sans-serif;
