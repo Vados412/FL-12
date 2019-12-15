@@ -1,11 +1,13 @@
 body {
+    background-color: $bckgrnmain;
     header {
         background: $headbgimg no-repeat center;
         background-size: cover;
         height: 532px;
-        font-family: $hind;
+        font-family: $fontheader;
         color: $fntclr;
-        border: 1px solid $btnfntclr;
+        background-color: $bckgrnmain;
+        border: 1px solid $bckgrnmain;
         border-radius: 0 0 500px/230px 0;
         .header-wrap {
             display: block;
@@ -49,6 +51,7 @@ body {
                 position: relative;
                 margin-top: 10px;
                 margin-bottom: 30px;
+                color: $fntclr;
                 &::before {
                     content: "awesome";
                     background-color: $wordbg;
@@ -60,8 +63,9 @@ body {
             }
             .header_text {
                 padding-left: 0px;
-                width: 470px;
+                width: 500px;
                 font-size: 12px;
+                white-space: pre-line;
             }
             div {
                 padding-top: 40px;
@@ -72,6 +76,7 @@ body {
                     padding-left: 110px;
                     font-size: 15px;
                     color: $btnfntclr;
+                    @include links;
                 }
             }
         }
@@ -81,8 +86,9 @@ body {
 main {
     text-align: center;
     .section_text {
+        color: $fntclr;
         font-size: 30px;
-        font-family: $sans;
+        font-family: $fontheadertext;
         font-weight: map-get($font-sila, "jirniy");
         position: relative;
         margin-bottom: 25px;
@@ -92,7 +98,7 @@ main {
             background-size: 1px;
             position: absolute;
             top: 0;
-            left: 717px;
+            left: 705px;
         }
     }
     .section_card_wrap {
@@ -117,7 +123,7 @@ main {
                 position: relative;
                 left: 10px;
                 top: 40px;
-                font-family: $hind;
+                font-family: $fontmaintext;
                 .section_card_heading {
                     text-align: center;
                     color: $btnfntclr;
@@ -125,6 +131,7 @@ main {
                     font-size: 17px;
                     right: 40px;
                     bottom: 10px;
+                    font-family: $fontheadertext;
                     font-weight: map-get($font-sila, "jirniy");
                 }
                 .section_card_text {
@@ -139,6 +146,7 @@ main {
                     color: $btnfntclr;
                     position: relative;
                     right: 33px;
+                    font-family: $fontlinks;
                 }
             }
         }
@@ -149,15 +157,16 @@ main {
         margin: 95px 0 0 270px;
         border: 1px solid transparent;
         border-radius: 5px;
-        background-image: linear-gradient(to right, #66950c, #2e5dd3);
-        z-index: 1;
+        background-image: $grad;
+        position: relative;
+        top: 55px;
         .section_banner_text_wrap {
             display: inline;
             text-align: left;
             position: relative;
             left: 110px;
             top: 13px;
-            font-family: $hind;
+            font-family: $fontheadertext;
             .section_banner_heading {
                 margin: 0;
                 font-size: 22px;
@@ -170,7 +179,7 @@ main {
                     background-size: 1px;
                     position: absolute;
                     top: 0;
-                    right: 297px;
+                    right: 288px;
                 }
             }
             .section_banner_text {
@@ -178,6 +187,7 @@ main {
                 font-weight: map-get($font-sila, "drish");
                 color: $sectiontextclr;
                 margin: 5px;
+                font-family: $fontmaintext;
             }
         }
         .section_banner_button {
@@ -186,6 +196,66 @@ main {
             position: relative;
             right: 117px;
             bottom: 32px;
+        }
+    }
+}
+
+footer {
+    height: 250px;
+    background-color: $bckclrmain;
+    color: $sectiontextclr;
+    overflow: hidden;
+    margin: 0;
+    font-family: $fontmaintext;
+    .footer-wrap {
+        white-space: nowrap;
+        overflow: hidden;
+        padding-top: 125px;
+        .footer_logo {
+            margin-left: 125px;
+            float: left;
+            img {
+                padding-top: 7px;
+                height: 32px;
+            }
+            p {
+                margin-top: 6px;
+                padding-left: 5px;
+                font-size: 18px;
+                text-align: center;
+            }
+            img+p {
+                display: inline-block;
+                vertical-align: top;
+                font-weight: map-get($font-sila, "jirniy");
+                span {
+                    font-weight: map-get($font-sila, "drish");
+                    font-size: 7px;
+                    text-align: center;
+                    padding-bottom: 4px;
+                    white-space: pre;
+                    vertical-align: top;
+                    &:before {
+                        content: "\A";
+                    }
+                }
+            }
+        }
+        .footer_text {
+            width: 300px;
+            position: relative;
+            left: 245px;
+            white-space: pre-line;
+            display: inline-block;
+            top: -33px;
+        }
+        .footer-cr {
+            width: 300px;
+            position: relative;
+            left: 575px;
+            white-space: pre-line;
+            display: inline-block;
+            top: -53px;
         }
     }
 }

@@ -1,96 +1,103 @@
-body header {
-  background: url(/img/m-h-night.jpg) no-repeat center;
-  background-size: cover;
-  height: 532px;
-  font-family: "Hind", sans-serif;
-  color: #2c2f3c;
-  border: 1px solid white;
-  border-radius: 0 0 500px/230px 0; }
-  body header .header-wrap {
-    display: block;
-    padding-left: 135px;
-    max-width: 650px; }
-    body header .header-wrap .landing-logo {
-      padding-top: 0px; }
-      body header .header-wrap .landing-logo img {
-        padding-top: 7px;
-        height: 32px; }
-      body header .header-wrap .landing-logo p {
-        margin-top: 2px;
-        padding-left: 5px;
-        font-size: 18px;
-        text-align: center; }
-      body header .header-wrap .landing-logo img + p {
-        display: inline-block;
-        vertical-align: top;
-        font-weight: bolder; }
-        body header .header-wrap .landing-logo img + p span {
-          font-weight: 200;
-          font-size: 7px;
-          text-align: center;
-          padding-bottom: 4px;
-          white-space: pre;
-          vertical-align: top; }
-          body header .header-wrap .landing-logo img + p span:before {
-            content: "\A"; }
-    body header .header-wrap .header_heading {
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 50px;
-      font-weight: bold;
-      width: 375px;
-      text-align: left;
-      position: relative;
-      margin-top: 10px;
-      margin-bottom: 30px; }
-      body header .header-wrap .header_heading::before {
-        content: "awesome";
-        background-color: #14a0c7;
-        background-size: 1px;
-        position: absolute;
-        top: 62px;
-        left: 0; }
-    body header .header-wrap .header_text {
-      padding-left: 0px;
-      width: 470px;
-      font-size: 12px; }
-    body header .header-wrap div {
-      padding-top: 40px; }
-      body header .header-wrap div .header_button {
-        border-style: solid;
-        border-color: #699900;
-        border-radius: 3px;
-        background-color: #699900;
-        color: white;
-        width: 105px;
-        height: 35px; }
-      body header .header-wrap div .login {
-        padding-left: 110px;
-        font-size: 15px;
-        color: white; }
+body {
+  background-color: #21232e; }
+  body header {
+    background: url(/img/m-h-night.jpg) no-repeat center;
+    background-size: cover;
+    height: 532px;
+    font-family: "Fresca", sans-serif;
+    color: #ffffff;
+    background-color: #21232e;
+    border: 1px solid #21232e;
+    border-radius: 0 0 500px/230px 0; }
+    body header .header-wrap {
+      display: block;
+      padding-left: 135px;
+      max-width: 650px; }
+      body header .header-wrap .landing-logo {
+        padding-top: 0px; }
+        body header .header-wrap .landing-logo img {
+          padding-top: 7px;
+          height: 32px; }
+        body header .header-wrap .landing-logo p {
+          margin-top: 2px;
+          padding-left: 5px;
+          font-size: 18px;
+          text-align: center; }
+        body header .header-wrap .landing-logo img + p {
+          display: inline-block;
+          vertical-align: top;
+          font-weight: bolder; }
+          body header .header-wrap .landing-logo img + p span {
+            font-weight: 200;
+            font-size: 7px;
+            text-align: center;
+            padding-bottom: 4px;
+            white-space: pre;
+            vertical-align: top; }
+            body header .header-wrap .landing-logo img + p span:before {
+              content: "\A"; }
+      body header .header-wrap .header_heading {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        width: 375px;
+        text-align: left;
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: #ffffff; }
+        body header .header-wrap .header_heading::before {
+          content: "awesome";
+          background-color: #ff4e33;
+          background-size: 1px;
+          position: absolute;
+          top: 62px;
+          left: 0; }
+      body header .header-wrap .header_text {
+        padding-left: 0px;
+        width: 500px;
+        font-size: 12px;
+        white-space: pre-line; }
+      body header .header-wrap div {
+        padding-top: 40px; }
+        body header .header-wrap div .header_button {
+          border-style: solid;
+          border-color: #e3ac00;
+          border-radius: 3px;
+          background-color: #e3ac00;
+          color: white;
+          width: 105px;
+          height: 35px; }
+        body header .header-wrap div .login {
+          padding-left: 110px;
+          font-size: 15px;
+          color: white;
+          font-family: "Hind", sans-serif; }
 
 main {
   text-align: center; }
   main .section_text {
+    color: #ffffff;
     font-size: 30px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Hind", sans-serif;
     font-weight: bolder;
     position: relative;
     margin-bottom: 25px; }
     main .section_text::before {
       content: "adventure";
-      background-color: #14a0c7;
+      background-color: #ff4e33;
       background-size: 1px;
       position: absolute;
       top: 0;
-      left: 717px; }
+      left: 705px; }
   main .section_card_wrap {
     max-width: 1420px; }
     main .section_card_wrap .section_card {
       width: 820px;
       height: 238px;
       display: inline-block;
-      background-color: #21232e;
-      border: 1px solid #21232e;
+      background-color: #3b3f50;
+      border: 1px solid #3b3f50;
       border-radius: 5px;
       left: 0px;
       position: relative;
@@ -98,8 +105,8 @@ main {
       main .section_card_wrap .section_card img {
         float: left;
         margin: 10px;
-        background-color: #21232e;
-        border: 1px solid #21232e;
+        background-color: #3b3f50;
+        border: 1px solid #3b3f50;
         border-radius: 5px;
         width: 320px; }
       main .section_card_wrap .section_card .section_card_right_container {
@@ -108,7 +115,7 @@ main {
         position: relative;
         left: 10px;
         top: 40px;
-        font-family: "Hind", sans-serif; }
+        font-family: "Fresca", sans-serif; }
         main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
           text-align: center;
           color: white;
@@ -116,10 +123,11 @@ main {
           font-size: 17px;
           right: 40px;
           bottom: 10px;
+          font-family: "Hind", sans-serif;
           font-weight: bolder; }
         main .section_card_wrap .section_card .section_card_right_container .section_card_text {
           text-align: justify;
-          color: #c0b6a0;
+          color: #c8d1cd;
           width: 350px;
           padding-left: 15px;
           line-height: 18px;
@@ -127,15 +135,17 @@ main {
         main .section_card_wrap .section_card .section_card_right_container .section_link {
           color: white;
           position: relative;
-          right: 33px; }
+          right: 33px;
+          font-family: "Hind", sans-serif; }
   main .section_banner {
     width: 62%;
     height: 105px;
     margin: 95px 0 0 270px;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-image: linear-gradient(to right, #66950c, #2e5dd3);
-    z-index: 1; }
+    background-image: linear-gradient(to right, #e0a703, #942f51);
+    position: relative;
+    top: 55px; }
     main .section_banner .section_banner_text_wrap {
       display: inline;
       text-align: left;
@@ -147,25 +157,26 @@ main {
         margin: 0;
         font-size: 22px;
         font-weight: bold;
-        color: #2c2f3c;
+        color: #ffffff;
         text-indent: 5px; }
         main .section_banner .section_banner_text_wrap .section_banner_heading::before {
           content: "start";
-          background-color: #14a0c7;
+          background-color: #ff4e33;
           background-size: 1px;
           position: absolute;
           top: 0;
-          right: 297px; }
+          right: 288px; }
       main .section_banner .section_banner_text_wrap .section_banner_text {
         margin: 0;
         font-weight: 200;
-        color: #c0b6a0;
-        margin: 5px; }
+        color: #c8d1cd;
+        margin: 5px;
+        font-family: "Fresca", sans-serif; }
     main .section_banner .section_banner_button {
       border-style: solid;
-      border-color: #699900;
+      border-color: #e3ac00;
       border-radius: 3px;
-      background-color: #699900;
+      background-color: #e3ac00;
       color: white;
       width: 105px;
       height: 35px;
@@ -173,3 +184,53 @@ main {
       position: relative;
       right: 117px;
       bottom: 32px; }
+
+footer {
+  height: 250px;
+  background-color: #3b3f50;
+  color: #c8d1cd;
+  overflow: hidden;
+  margin: 0;
+  font-family: "Fresca", sans-serif; }
+  footer .footer-wrap {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 125px; }
+    footer .footer-wrap .footer_logo {
+      margin-left: 125px;
+      float: left; }
+      footer .footer-wrap .footer_logo img {
+        padding-top: 7px;
+        height: 32px; }
+      footer .footer-wrap .footer_logo p {
+        margin-top: 6px;
+        padding-left: 5px;
+        font-size: 18px;
+        text-align: center; }
+      footer .footer-wrap .footer_logo img + p {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bolder; }
+        footer .footer-wrap .footer_logo img + p span {
+          font-weight: 200;
+          font-size: 7px;
+          text-align: center;
+          padding-bottom: 4px;
+          white-space: pre;
+          vertical-align: top; }
+          footer .footer-wrap .footer_logo img + p span:before {
+            content: "\A"; }
+    footer .footer-wrap .footer_text {
+      width: 300px;
+      position: relative;
+      left: 245px;
+      white-space: pre-line;
+      display: inline-block;
+      top: -33px; }
+    footer .footer-wrap .footer-cr {
+      width: 300px;
+      position: relative;
+      left: 575px;
+      white-space: pre-line;
+      display: inline-block;
+      top: -53px; }

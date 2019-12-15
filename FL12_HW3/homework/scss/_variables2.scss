@@ -1,9 +1,11 @@
-$wordbg: #14a0c7;
+$wordbg: #ff4e33;
 $headbgimg: url(/img/m-h-night.jpg);
-$fntclr: #2c2f3c;
-$btnclr: #699900;
+$fntclr: #ffffff;
+$btnclr: #e3ac00;
 $btnfntclr: white;
-$bckclrmain: #21232e;
+$bckgrnmain: #21232e;
+$bckclrmain: #3b3f50;
+$grad: linear-gradient(to right, #e0a703, #942f51);
 @mixin bordermain {
     background-color: $bckclrmain;
     border: 1px solid $bckclrmain;
@@ -20,11 +22,19 @@ $bckclrmain: #21232e;
     height: 35px;
 }
 
+@mixin links {
+    font-family: $fontlinks;
+}
+
 $font-sila: ("hudoi": 100, "drish": 200, "normal": 400, "jirniy": bolder, "kachok":bold);
-$sectiontextclr:#c0b6a0;
+$sectiontextclr:#c8d1cd;
 $sans:'Source Sans Pro',
 sans-serif;
 $hind: 'Hind',
 sans-serif;
 $fresca: 'Fresca',
 sans-serif;
+$fontheader:$fresca;
+$fontheadertext:$hind;
+$fontmaintext: $fresca;
+$fontlinks: $hind;

@@ -1,9 +1,11 @@
 $wordbg: #14a0c7;
 $headbgimg: url(/img/m-h-day.jpg);
+$bckgrnmain: white;
 $fntclr: #2c2f3c;
 $btnclr: #699900;
 $btnfntclr: white;
 $bckclrmain: #21232e;
+$grad: linear-gradient(to right, #66950c, #2e5dd3);
 @mixin bordermain {
     background-color: $bckclrmain;
     border: 1px solid $bckclrmain;
@@ -20,6 +22,10 @@ $bckclrmain: #21232e;
     height: 35px;
 }
 
+@mixin links {
+    font-family: $fontlinks;
+}
+
 $font-sila: ("hudoi": 100, "drish": 200, "normal": 400, "jirniy": bolder, "kachok":bold);
 $sectiontextclr:#c0c3ce;
 $sans:'Source Sans Pro',
@@ -28,3 +34,7 @@ $hind: 'Hind',
 sans-serif;
 $fresca: 'Fresca',
 sans-serif;
+$fontheader:$hind;
+$fontheadertext:$hind;
+$fontmaintext: $hind;
+$fontlinks: $hind;
