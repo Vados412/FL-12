@@ -74,25 +74,25 @@ body {
           color: white;
           font-family: "Hind", sans-serif; }
 
-main {
+.section, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
   text-align: center; }
-  main .section_text {
+  .section .section_text, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_text {
     color: #2c2f3c;
     font-size: 30px;
     font-family: "Hind", sans-serif;
     font-weight: bolder;
     position: relative;
     margin-bottom: 25px; }
-    main .section_text::before {
+    .section .section_text::before, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_text::before {
       content: "adventure";
       background-color: #14a0c7;
       background-size: 1px;
       position: absolute;
       top: 0;
       left: 705px; }
-  main .section_card_wrap {
+  .section .section_card_wrap, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_card_wrap {
     max-width: 1420px; }
-    main .section_card_wrap .section_card {
+    .section .section_card_wrap .section_card, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_card_wrap .section_card {
       width: 820px;
       height: 238px;
       display: inline-block;
@@ -102,22 +102,21 @@ main {
       left: 0px;
       position: relative;
       margin-bottom: 14px; }
-      main .section_card_wrap .section_card img {
+      .section .section_card_wrap .section_card img, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_card_wrap .section_card img {
         float: left;
         margin: 10px;
         background-color: #21232e;
         border: 1px solid #21232e;
         border-radius: 5px;
         width: 320px; }
-      main .section_card_wrap .section_card .section_card_right_container {
+      .section .section_card_wrap .section_card .section_card_right_container, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_card_wrap .section_card .section_card_right_container {
         float: right;
         width: 450px;
         position: relative;
         left: 10px;
         top: 40px;
         font-family: "Hind", sans-serif; }
-        main .section_card_wrap .section_card .section_card_right_container .section_card_heading {
-          text-align: center;
+        .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
           color: white;
           position: relative;
           font-size: 17px;
@@ -125,19 +124,19 @@ main {
           bottom: 10px;
           font-family: "Hind", sans-serif;
           font-weight: bolder; }
-        main .section_card_wrap .section_card .section_card_right_container .section_card_text {
+        .section .section_card_wrap .section_card .section_card_right_container .section_card_text {
           text-align: justify;
           color: #c0c3ce;
           width: 350px;
           padding-left: 15px;
           line-height: 18px;
           font-weight: 100; }
-        main .section_card_wrap .section_card .section_card_right_container .section_link {
+        .section .section_card_wrap .section_card .section_card_right_container .section_link {
           color: white;
           position: relative;
           right: 33px;
           font-family: "Hind", sans-serif; }
-  main .section_banner {
+  .section .section_banner, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner {
     width: 62%;
     height: 105px;
     margin: 95px 0 0 270px;
@@ -146,33 +145,33 @@ main {
     background-image: linear-gradient(to right, #66950c, #2e5dd3);
     position: relative;
     top: 55px; }
-    main .section_banner .section_banner_text_wrap {
+    .section .section_banner .section_banner_text_wrap, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner .section_banner_text_wrap {
       display: inline;
       text-align: left;
       position: relative;
       left: 110px;
       top: 13px;
       font-family: "Hind", sans-serif; }
-      main .section_banner .section_banner_text_wrap .section_banner_heading {
+      .section .section_banner .section_banner_text_wrap .section_banner_heading, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner .section_banner_text_wrap .section_banner_heading {
         margin: 0;
         font-size: 22px;
         font-weight: bold;
         color: #2c2f3c;
         text-indent: 5px; }
-        main .section_banner .section_banner_text_wrap .section_banner_heading::before {
+        .section .section_banner .section_banner_text_wrap .section_banner_heading::before, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner .section_banner_text_wrap .section_banner_heading::before {
           content: "start";
           background-color: #14a0c7;
           background-size: 1px;
           position: absolute;
           top: 0;
           right: 288px; }
-      main .section_banner .section_banner_text_wrap .section_banner_text {
+      .section .section_banner .section_banner_text_wrap .section_banner_text, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner .section_banner_text_wrap .section_banner_text {
         margin: 0;
         font-weight: 200;
         color: #c0c3ce;
         margin: 5px;
         font-family: "Hind", sans-serif; }
-    main .section_banner .section_banner_button {
+    .section .section_banner .section_banner_button, .section .section_card_wrap .section_card .section_card_right_container .section_card_heading .section_banner .section_banner_button {
       border-style: solid;
       border-color: #699900;
       border-radius: 3px;

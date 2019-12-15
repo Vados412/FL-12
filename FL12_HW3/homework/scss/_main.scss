@@ -83,7 +83,7 @@ body {
     }
 }
 
-main {
+.section {
     text-align: center;
     .section_text {
         color: $fntclr;
@@ -125,7 +125,7 @@ main {
                 top: 40px;
                 font-family: $fontmaintext;
                 .section_card_heading {
-                    text-align: center;
+                    @extend .section;
                     color: $btnfntclr;
                     position: relative;
                     font-size: 17px;
