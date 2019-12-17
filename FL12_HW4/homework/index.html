@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,18 +9,24 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        Front-end Lab Home About Gallery Contact
+    <header class="top-header">
+      <div><p class="logo">Front-end Lab</p></div>
+      <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
       </nav>
     </header>
-    <div>
-      <section>
-        <header>
-          <h1>This is Front-end Lab.</h1>
-          <p>EPAM Front-end Lab</p>
-          <a href="#">Discover More</a>
-        </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1 class="section-title">Hello! This is Front-end Lab.</h1>
+        <p>EPAM Front-end Lab</p>
+        <button>Discover More</button>
+      </div>
+    </section>
+    <section class="articles">
+      <div class="article">
         <article>
           <img
             class="article-img"
@@ -36,9 +42,9 @@
               src="img/author-image1.jpg"
               alt="Jen Lopez photo"
             />
-            <span class="autor-name">Jen Lopez</span>
-            <span class="date">July 22, 2017</span>
-            <span class="comments-count">&#128489; 35 Comments</span>
+            <div class="autor-name"><p>Jen Lopez</p></div>
+            <div class="date"><p>July 22, 2017</p></div>
+            <div class="comments-count"><p>35 Comments</p></div>
           </div>
           <p class="article-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -48,15 +54,13 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
-        </article>
-        <footer>
-          <p>
-            <a class="continue-reading" href="#">
-              Continue Reading
-            </a>
-          </p>
+          <button class="continue-reading">
+            Continue Reading
+          </button>
           <hr />
-        </footer>
+        </article>
+      </div>
+      <div class="article">
         <article>
           <img
             class="article-img"
@@ -72,9 +76,9 @@
               src="img/author-image2.jpg"
               alt="Leo Dennis photo"
             />
-            <span class="autor-name">Leo Dennis</span>
-            <span class="date">June 10, 2017</span>
-            <span class="comments-count"> &#128489;&#128172; 48 Comments</span>
+            <div class="autor-name"><p>Leo Dennis</p></div>
+            <div class="date"><p>June 10, 2017</p></div>
+            <div class="comments-count"><p>48 Comments</p></div>
           </div>
           <p class="article-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -84,15 +88,13 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
-        </article>
-        <footer>
-          <p>
-            <a class="continue-reading" href="#">
-              Continue Reading
-            </a>
-          </p>
+          <button class="continue-reading">
+            Continue Reading
+          </button>
           <hr />
-        </footer>
+        </article>
+      </div>
+      <div class="article">
         <article>
           <img
             class="article-img"
@@ -108,9 +110,9 @@
               src="img/author-image1.jpg"
               alt="Jen Lopez photo"
             />
-            <span class="autor-name">Jen Lopez</span>
-            <span class="date">May 30, 2017</span>
-            <span class="comments-count">&#128489;&#128173; 63 Comments</span>
+            <div class="autor-name"><p>Jen Lopez</p></div>
+            <div class="date"><p>May 30, 2017</p></div>
+            <div class="comments-count"><p>63 Comments</p></div>
           </div>
           <p class="article-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -120,15 +122,13 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
-        </article>
-        <footer>
-          <p>
-            <a class="continue-reading" href="#">
-              Continue Reading
-            </a>
-          </p>
+          <button class="continue-reading">
+            Continue Reading
+          </button>
           <hr />
-        </footer>
+        </article>
+      </div>
+      <div class="article">
         <article>
           <img
             class="article-img"
@@ -144,9 +144,9 @@
               src="img/author-image2.jpg"
               alt="Leo Dennis photo"
             />
-            <span class="autor-name">Leo Dennis</span>
-            <span class="date">April 18, 2017</span>
-            <span class="comments-count"> &#128489;&#128172; 124 Comments</span>
+            <div class="autor-name"><p>Leo Dennis</p></div>
+            <div class="date"><p>April 18, 2017</p></div>
+            <div class="comments-count"><p>124 Comments</p></div>
           </div>
           <p class="article-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -156,15 +156,13 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
-        </article>
-        <footer>
-          <p>
-            <a class="continue-reading" href="#">
-              Continue Reading
-            </a>
-          </p>
+          <button class="continue-reading">
+            Continue Reading
+          </button>
           <hr />
-        </footer>
+        </article>
+      </div>
+      <div class="article">
         <article>
           <img
             class="article-img"
@@ -180,11 +178,9 @@
               src="img/author-image1.jpg"
               alt="Jen Lopez photo"
             />
-            <span class="autor-name">Jen Lopez</span>
-            <span class="date">March 12, 2017</span>
-            <span class="comments-count"
-              >&#128489;&#128173;&#128494; 256 Comments</span
-            >
+            <div class="autor-name"><p>Jen Lopez</p></div>
+            <div class="date"><p>March 12, 2017</p></div>
+            <div class="comments-count"><p>256 Comments</p></div>
           </div>
           <p class="article-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -194,33 +190,28 @@
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur.
           </p>
+          <button class="continue-reading">
+            Continue Reading
+          </button>
         </article>
-        <footer>
+      </div>
+      <footer class="footer">
+        <div class="left-side-footer">
+          <h3>EPAM LAB</h3>
           <p>
-            <a class="continue-reading" href="#">
-              Continue Reading
-            </a>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
           </p>
-          <hr />
-        </footer>
-      </section>
-    </div>
-    <footer class="footer">
-      <div class="left-side-footer">
-        <h3>EPAM LAB</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua.
-        </p>
-        <p>Copyright © 2019 EPAM</p>
-      </div>
-      <div class="right-side-footer">
-        <h3>Talk to us</h3>
-        <p>512 Delicious Street, San Francisco, CA 10880</p>
-        <p>010-020-0990</p>
-        <p>info@company.com</p>
-      </div>
-    </footer>
+          <p>Copyright © 2019 EPAM</p>
+        </div>
+        <div class="right-side-footer">
+          <h3>Talk to us</h3>
+          <p>512 Delicious Street, San Francisco, CA 10880</p>
+          <p>010-020-0990</p>
+          <p>info@company.com</p>
+        </div>
+      </footer>
+    </section>
   </body>
 </html>

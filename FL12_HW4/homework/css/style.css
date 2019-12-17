@@ -1,0 +1,144 @@
+@media only screen and (min-width: 900px) {
+  body {
+    margin: 0;
+    padding: 0;
+    color: #777; }
+    body .top-header {
+      height: 10vh;
+      width: auto; }
+      body .top-header .logo {
+        font-size: 16px;
+        text-transform: uppercase;
+        position: relative;
+        left: 230px;
+        top: 10px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        display: inline-block; }
+      body .top-header .navigation {
+        position: relative;
+        float: right;
+        right: 100px;
+        bottom: 25px; }
+        body .top-header .navigation a {
+          padding-left: 22px;
+          padding-right: 22px;
+          text-decoration: none;
+          color: #777; }
+          body .top-header .navigation a:hover {
+            color: #bfba55; }
+    body .hero {
+      position: relative;
+      width: 100vw;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body .hero::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/home-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        filter: brightness(50%);
+        overflow: hidden; }
+      body .hero .hero-content {
+        position: relative;
+        text-align: center;
+        margin: 0.625rem; }
+        body .hero .hero-content .section-title {
+          color: white;
+          font-size: 57px;
+          margin-bottom: 0; }
+        body .hero .hero-content p {
+          margin-top: 1rem;
+          color: #bfba55;
+          font-size: 9px;
+          letter-spacing: 2px; }
+        body .hero .hero-content button {
+          margin-top: 3rem;
+          color: #777;
+          height: 44px;
+          width: 158px;
+          background-color: white;
+          border: 1px solid white;
+          border-radius: 50px;
+          cursor: pointer; }
+    body .articles {
+      display: flex;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      flex-wrap: wrap; }
+      body .articles .article {
+        display: flex;
+        width: 60vw;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto; }
+        body .articles .article .article-img {
+          width: 100%;
+          height: auto;
+          margin-top: 86px; }
+        body .articles .article .article-title {
+          color: black;
+          font-size: 21px; }
+        body .articles .article .info-section {
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 30px; }
+          body .articles .article .info-section .autor-img {
+            height: 42px;
+            width: 42px;
+            border-radius: 50px; }
+          body .articles .article .info-section .autor-name,
+          body .articles .article .info-section .date,
+          body .articles .article .info-section .comments-count {
+            color: black;
+            font-weight: 100;
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 5px;
+            margin-left: 10px; }
+        body .articles .article .article-text {
+          font-size: 13px;
+          line-height: 1.5em;
+          margin-bottom: 30px; }
+        body .articles .article .continue-reading {
+          background-color: white;
+          font-weight: bolder;
+          color: #777;
+          height: 48px;
+          width: 190px;
+          border: 1px solid #777;
+          border-radius: 50px;
+          cursor: pointer;
+          margin-bottom: 62px; }
+    body .footer {
+      background-color: black;
+      display: flex;
+      width: 100vw;
+      height: 35vh;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin: 0; }
+      body .footer div {
+        display: flex;
+        width: 30vw;
+        flex-direction: column;
+        align-items: flex-start; }
+        body .footer div h3 {
+          color: white;
+          font-size: 21px;
+          margin: 0 0 17px 0; }
+        body .footer div p {
+          width: 23vw;
+          margin: 0 0 17px 0; } }
