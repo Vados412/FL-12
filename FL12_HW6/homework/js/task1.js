@@ -5,7 +5,7 @@ const two = 2;
 const four = 4;
 const sotka = 100;
 var d = b * b - four * a * c;
-if (isNaN(a) == true || isNaN(b) == true || isNaN(c) == true || (a == 0 && b != 0 && c != 0)) {
+if (isNaN(a) == true || isNaN(b) == true || isNaN(c) == true || a == 0) {
   alert("Invalid input data");
 } else if (a == 0 && b == 0 && c == 0) {
   console.log("x=0");
